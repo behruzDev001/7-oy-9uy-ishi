@@ -1,0 +1,117 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.company {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.company .text-content {
+  flex: 1;
+}
+
+.company .text-content h3 {
+  font-size: 14px;
+  color: #FF8C42;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.company .text-content h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.company .text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.company .images {
+  display: flex;
+  gap: 10px;
+}
+
+.company .images .image {
+  flex: 1;
+}
+
+.company .images .image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.story {
+  padding: 60px 0;
+  background-color: #F7F9FC;
+}
+
+.story .text-content h4 {
+  font-size: 14px;
+  color: #304FFE;
+  margin-bottom: 10px;
+}
+
+.story .text-content h2 {
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.story .text-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.story .stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.story .stat {
+  text-align: center;
+}
+
+.story .stat h3 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.story .stat p {
+  font-size: 14px;
+  color: #666;
+}
+
+.story .logos {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.story .logos img {
+  max-width: 100px;
+  height: auto;
+}

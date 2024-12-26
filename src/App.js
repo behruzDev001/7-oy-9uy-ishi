@@ -6,17 +6,23 @@ import Home from "./components/Main/Home";
 import Service from "./components/Main/Service";
 import Company from "./components/Main/Company";
 import Career from "./components/Main/Career";
-import "./App.css";
+import NotPage from "./notpage/NotPage";
+import Detail from "./products/Detail"
+import Birinchi from "./Birinchi/Birinchi";
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
+        <Route path="/" element={<><Home /><Birinchi /></>} />
         <Route path="/" element={<Home />} />
+        <Route path="/photo/:id" element={<Detail />} /> 
         <Route path="/service" element={<Service />} />
         <Route path="/company" element={<Company />} />
         <Route path="/career" element={<Career />} />
+      <Route path="*" element={<NotPage />} />
+
       </Routes>
       <Footer />
     </Router>

@@ -11,25 +11,11 @@ function NotFound() {
           no worries, let’s get you back on track!
         </p>
       </div>
-      <div className="notfound-image">
-        {/* <img 
-          src="https://via.placeholder.com/400" 
-          alt="Lost in Space" 
-          className="notfound-img"
-        /> */}
-      </div>
       <div className="notfound-actions">
         <a href="/" className="home-button">
           Go to Homepage
         </a>
-        <a
-        //   href="https://www.awwwards.com"
-        //   target="_blank"
-        //   rel="noopener noreferrer"
-        //   className="curated-link"
-        >
           Curated by awwwards
-        </a>
       </div>
     </div>
   );

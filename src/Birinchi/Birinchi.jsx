@@ -67,6 +67,7 @@ const Birinchi = () => {
                         </span>
                         <img src={selectedPhoto.url} alt={selectedPhoto.title} />
                         <h2>{selectedPhoto.title}</h2>
+                        <button onClick={handleSeeMore}>See more</button>
                     </div>
                 </div>
             )}

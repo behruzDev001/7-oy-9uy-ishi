@@ -1,4 +1,3 @@
-// Products.jsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,14 +6,14 @@ const Products = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('YOUR_API_URL_HERE') // API URL ni qo'shing
+    fetch('YOUR_API_URL_HERE') 
       .then((res) => res.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));
   }, []);
 
   const handleDetail = (id) => {
-    navigate(`/product/${id}`); // Detail sahifasiga yo'naltirish
+    navigate(`/product/${id}`); 
   };
 
   return (

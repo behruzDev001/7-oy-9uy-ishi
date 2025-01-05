@@ -1,4 +1,4 @@
-import React from "react";
+  import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Detail.css";
 
@@ -15,6 +15,20 @@ const PhotoDetails = () => {
             </div>
         );
     }
+
+    return (
+        <div className="photo-details">
+          <button className="back-button" onClick={() => navigate(-1)}>
+            Go Back
+          </button>
+          <div className="photo-info">
+            <img src={photo.url} alt={photo.title} />
+            <h2>{photo.title}</h2>
+            <p><strong>* ID:</strong> {photo.albumId}</p>
+            <p><strong>Rasm ID:</strong> {photo.id}</p>
+          </div>
+        </div>
+      );
 };
 
 export default PhotoDetails;

@@ -1,4 +1,3 @@
-// ProductDetail.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -7,7 +6,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch(`YOUR_API_URL_HERE/${id}`) // Mahsulotning ID orqali ma'lumotini olish
+    fetch(`YOUR_API_URL_HERE/${id}`) 
       .then((res) => res.json())
       .then((data) => setProduct(data))
       .catch((err) => console.error(err));
